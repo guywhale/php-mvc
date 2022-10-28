@@ -15,9 +15,12 @@ class Pages
 
     }
 
-    public function about($id)
+    public function about($id = [])
     {
         echo 'This is about';
-        echo $id;
+
+        if ($id) {
+            echo $id;
+        }
     }
 }
