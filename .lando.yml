@@ -1,0 +1,7 @@
+name: php-mvc
+recipe: lamp
+config:
+  webroot: .
+services:
+  myservice:
+    type: phpmyadmin
