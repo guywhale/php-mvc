@@ -9,8 +9,13 @@ class Controller
     //Load Model
     public function model($model = null)
     {
-        // Require model file
-        require_once '../app/models' . $model . '.php';
+        // Check for model file
+        if (!file_exists(MODELSPATH . $model . '.php')) {
+            // Model does not exist
+            die('Model does not exist');
+        }
+
+        require_once MODELSPATH . $model . '.php';
 
         // Instantiate model
         return new $model();
@@ -19,15 +24,12 @@ class Controller
     // Load View
     public function view($view = null, $data = [])
     {
-        // Path to views directory
-        $viewPath = '../app/views/';
-
         // Check for view file
-        if (file_exists("{$viewPath}$view.php")) {
-            require_once "{$viewPath}$view.php";
-        } else {
+        if (!file_exists(VIEWSPATH . $view . '.php')) {
             // View does not exist
             die('View does not exist');
         }
+
+        require_once VIEWSPATH . $view . '.php';
     }
 }
