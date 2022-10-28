@@ -31,7 +31,7 @@ class Core
         require_once '../app/controllers/' . $this->currentController . '.php';
 
         // Instantiate the controller
-        $this->currentController = new $this->currentController;
+        $this->currentController = new $this->currentController();
 
         // Check for second part of URL
         if (isset($url[1])) {
