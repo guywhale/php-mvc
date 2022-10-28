@@ -3,7 +3,7 @@
 // App Root
 define('APPROOT', dirname(dirname(__FILE__)));
 // URL Root
-define('URLROOT', 'http://php-mvc.lndo.site/');
+define('URLROOT', 'http://php-mvc.lndo.site');
 // Site Name
 define('SITENAME', 'HwaleMVC');
 // Path to views directory
