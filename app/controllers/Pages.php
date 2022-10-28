@@ -12,15 +12,12 @@ class Pages extends Controller
 
     public function index()
     {
-
+        $data = ['title' => 'Welcome to the Homepage'];
+        $this->view('pages/index', $data);
     }
 
-    public function about($id = [])
+    public function about()
     {
-        echo 'This is about';
-
-        if ($id) {
-            echo $id;
-        }
+        $this->view('pages/about');
     }
 }
