@@ -10,7 +10,6 @@
     'confirmPasswordErr' => $confirmPasswordErr,
 ] = $data;
 
-echo '<pre style="color: #000;">'; print_r($nameErr); echo '</pre>';
 ?>
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
