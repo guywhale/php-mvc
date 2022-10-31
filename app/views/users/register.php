@@ -46,7 +46,7 @@
                     <input type="password"
                         name="password"
                         class="form-control form-control-lg <?= !empty($passwordErr) ? 'is-invalid' : '' ?>"
-                        value="<?= $password; ?>"
+                        value=""
                     >
                     <?php if ($passwordErr) { ?>
                         <span class="invalid-feedback"><?= $passwordErr; ?></span>
@@ -57,7 +57,7 @@
                     <input type="password"
                         name="confirmPassword"
                         class="form-control form-control-lg <?= !empty($confirmPasswordErr) ? 'is-invalid' : '' ?>"
-                        value="<?= $confirmPassword; ?>"
+                        value=""
                     >
                     <?php if ($confirmPasswordErr) { ?>
                         <span class="invalid-feedback"><?= $confirmPasswordErr; ?></span>
