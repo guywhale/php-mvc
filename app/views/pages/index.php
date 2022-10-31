@@ -1,11 +1,11 @@
-<?php require APPROOT . '/views/inc/header.php'; ?>
-
 <?php
 [
     'title' => $title,
     'description' => $description
 ] = $data;
 ?>
+
+<?php require APPROOT . '/views/inc/header.php'; ?>
 
 <div class="mt-4 p-5 text-bg-secondary rounded text-center">
     <div class="container">

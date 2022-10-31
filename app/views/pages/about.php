@@ -1,5 +1,3 @@
-<?php require APPROOT . '/views/inc/header.php'; ?>
-
 <?php
 [
     'title' => $title,
@@ -7,6 +5,7 @@
 ] = $data;
 ?>
 
+<?php require APPROOT . '/views/inc/header.php'; ?>
 
 <?php if ($title) { ?>
     <h1 class=""><?= $title; ?></h1>
