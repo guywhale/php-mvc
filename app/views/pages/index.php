@@ -7,7 +7,7 @@
 ] = $data;
 ?>
 
-<div class="mt-4 p-5 rounded text-center">
+<div class="mt-4 p-5 text-bg-secondary rounded text-center">
     <div class="container">
     <?php if ($title) { ?>
         <h1 class="display-3"><?= $title; ?></h1>

@@ -7,13 +7,15 @@
 ] = $data;
 ?>
 
-<div class="mt-4 p-5 rounded text-center">
-    <div class="container">
-    <?php if ($title) { ?>
-        <h1 class="display-3"><?= $title; ?></h1>
-        <p class="lead"><?= $description; ?></p>
-    <?php } ?>
-    </div>
-</div>
+
+<?php if ($title) { ?>
+    <h1 class=""><?= $title; ?></h1>
+<?php } ?>
+
+<?php if ($description) { ?>
+    <p class=""><?= $description; ?></p>
+    <p>Version <strong><?= APPVERSION; ?></strong></p>
+<?php } ?>
+
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>

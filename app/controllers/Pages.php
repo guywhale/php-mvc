@@ -26,6 +26,6 @@ class Pages extends Controller
             'description' => 'App to share posts with other users.'
         ];
 
-        $this->view('pages/index', $data);
+        $this->view('pages/about', $data);
     }
 }

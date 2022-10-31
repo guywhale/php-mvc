@@ -21,3 +21,5 @@ define('SITENAME', getenv('SITENAME') ?: null);
 define('VIEWSPATH', '../app/views/');
 // Path to models directory
 define('MODELSPATH', '../app/models/');
+// App version
+define('APPVERSION', '1.0.0');
