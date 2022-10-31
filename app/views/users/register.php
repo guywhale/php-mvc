@@ -65,10 +65,10 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <input type="submit" value="Register" class="btn btn-success btn-block">
+                        <input type="submit" value="Register" class="btn btn-success btn-lg d-block w-100">
                     </div>
                     <div class="col">
-                        <a href="<?= URLROOT; ?>/users/login" class="btn btn-light btn-block">
+                        <a href="<?= URLROOT; ?>/users/login" class="btn btn-light btn-lg d-block">
                             Have an account?
                         </a>
                     </div>
