@@ -14,7 +14,7 @@
         <div class="card card-body bg-light mt-5">
             <h2 class="mb-3">Login</h2>
             <p>Please fill in your credentials to login.</p>
-            <form action="<?= URLROOT; ?>/users/register" method="POST">
+            <form action="<?= URLROOT; ?>/users/login" method="POST">
                 <div class="form-group mb-3">
                     <label for="email">Email: <sup>*</sup></label>
                     <input type="email"
