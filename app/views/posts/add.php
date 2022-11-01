@@ -32,9 +32,7 @@
             <textarea
                 name="body"
                 class="form-control form-control-lg <?= !empty($bodyErr) ? 'is-invalid' : '' ?>"
-            >
-                <?= $body; ?>
-            </textarea>
+            ><?= $body; ?></textarea>
             <?php if ($bodyErr) { ?>
                 <span class="invalid-feedback"><?= $bodyErr; ?></span>
             <?php } ?>
