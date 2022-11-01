@@ -28,7 +28,7 @@
             <?php } ?>
         </div>
         <div class="form-group mb-4">
-            <label for="password">Body: <sup>*</sup></label>
+            <label for="body">Body: <sup>*</sup></label>
             <textarea
                 name="body"
                 class="form-control form-control-lg <?= !empty($bodyErr) ? 'is-invalid' : '' ?>"
