@@ -177,7 +177,7 @@ class Users extends Controller
         $_SESSION['userId'] = $user->id;
         $_SESSION['userEmail'] = $user->email;
         $_SESSION['userName'] = $user->name;
-        redirect('pages/index');
+        redirect('posts');
     }
 
     public function logout()
@@ -188,14 +188,5 @@ class Users extends Controller
 
         session_destroy();
         redirect('users/login');
-    }
-
-    public function isLoggedIn()
-    {
-        if (isset($_SESSION['userId'])) {
-            return true;
-        } else {
-            return false;
-        }
     }
 }
