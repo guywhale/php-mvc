@@ -108,6 +108,6 @@ class Database
     // https://www.php.net/manual/en/pdostatement.rowcount.php
     public function rowCount()
     {
-        $this->stmt->rowCount();
+        return $this->stmt->rowCount();
     }
 }
