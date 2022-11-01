@@ -12,6 +12,7 @@
 <div class="row">
     <div class="col-md-8 col-lg-6 mx-auto">
         <div class="card card-body bg-light mt-5">
+            <?php flash('registerSuccess'); ?>
             <h2 class="mb-3">Login</h2>
             <p>Please fill in your credentials to login.</p>
             <form action="<?= URLROOT; ?>/users/login" method="POST">
