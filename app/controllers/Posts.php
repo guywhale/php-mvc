@@ -34,4 +34,16 @@ class Posts extends Controller
 
         return $posts;
     }
+
+    public function add()
+    {
+        $data = [
+            'title' => '',
+            'body' => '',
+            'titleErr' => '',
+            'bodyErr' => '',
+        ];
+
+        $this->view('posts/add', $data);
+    }
 }
