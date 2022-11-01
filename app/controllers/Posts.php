@@ -170,4 +170,27 @@ class Posts extends Controller
 
         $this->view('posts/show', $data);
     }
+
+    public function delete($id)
+    {
+        // Get current post from model
+        $post = $this->postModel->getPostById($id);
+
+        // Check for owner to ensure non-logged in users can't access URL
+        if ($post->userId !== $_SESSION['userId']) {
+            // redirect back to posts page if not logged in.
+            redirect('posts');
+        }
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if ($this->postModel->deletePost($id)) {
+                flash('postMessage', 'Post removed.');
+                redirect('posts');
+            } else {
+                die('Something went wrong.');
+            }
+        } else {
+            redirect('posts');
+        }
+    }
 }
