@@ -16,7 +16,6 @@ class User
         $this->db->bind(':email', $email);
 
         $row = $this->db->single();
-        echo '<pre style="color: #000;">'; print_r($this->db->rowCount()); echo '</pre>';
 
         // Check row exists
         if ($this->db->rowCount() > 0) {
