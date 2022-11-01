@@ -24,7 +24,7 @@
             <?= $post->title; ?>
         </h4>
         <div class="bg-light p-2 mb-3">
-            Written by <?= $post->name; ?> on <?= $post->postCreated ?>
+            Written by <?= $post->name; ?> on <?= $post->postCreated; ?>
         </div>
         <p class="card-text">
             <?= $post->body; ?>
