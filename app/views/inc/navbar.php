@@ -17,6 +17,9 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <?php if (isset($_SESSION['userId'])) { ?>
                     <li class="nav-item">
+                        <span class="nav-link">Welcome <?= $_SESSION['userName'];  ?></span>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="<?= URLROOT; ?>/users/logout">Logout</a>
                     </li>
                 <?php } else { ?>
