@@ -9,13 +9,14 @@ class Posts extends Controller
         }
 
         $this->postModel = $this->model('Post');
+        $this->userModel = $this->model('User');
     }
 
     public function index()
     {
         $posts = $this->postModel->getPosts();
         // Format time
-        $this->formatTime($posts);
+        $this->formatTimes($posts);
 
         $data = [
             'posts' => $posts
@@ -25,7 +26,7 @@ class Posts extends Controller
     }
 
     // Format time to 01 November 2022
-    public function formatTime($posts)
+    public function formatTimes($posts)
     {
         foreach ($posts as $post) {
             $dateObj = new DateTime($post->postCreated);
@@ -87,5 +88,21 @@ class Posts extends Controller
 
             $this->view('posts/add', $data);
         }
+    }
+
+    // Show individual posts
+    public function show($id)
+    {
+        $post = $this->postModel->getPostById($id);
+        // Format time
+        $this->formatTimes([$post]);
+
+        $user = $this->userModel->getUserById($post->user_id);
+        $data = [
+            'post' => $post,
+            'user' => $user
+        ];
+
+        $this->view('posts/show', $data);
     }
 }

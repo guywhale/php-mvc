@@ -44,4 +44,20 @@ class Post
             return false;
         }
     }
+
+    public function getPostById($id)
+    {
+        $sql = 'SELECT *,
+                posts.created_at as postCreated,
+                posts.user_id as userId
+                FROM posts
+                WHERE id = :id
+                ';
+        $this->db->query($sql);
+        $this->db->bind(':id', $id);
+
+        $row = $this->db->single();
+
+        return $row;
+    }
 }
