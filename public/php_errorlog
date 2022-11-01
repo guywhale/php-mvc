@@ -1,0 +1,21 @@
+[01-Nov-2022 18:54:39 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: /home/customer/www/shareposts.guywhale.com/public_html/app/config/../.env does not exist in /home/customer/www/shareposts.guywhale.com/public_html/app/libraries/DotEnv.php:18
+Stack trace:
+#0 /home/customer/www/shareposts.guywhale.com/public_html/app/config/config.php(6): DevCoder\DotEnv->__construct('/home/customer/...')
+#1 /home/customer/www/shareposts.guywhale.com/public_html/app/bootstrap.php(8): require_once('/home/customer/...')
+#2 /home/customer/www/shareposts.guywhale.com/public_html/public/index.php(3): require_once('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/shareposts.guywhale.com/public_html/app/libraries/DotEnv.php on line 18
+[01-Nov-2022 19:47:23 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: .env does not exist in /home/customer/www/shareposts.guywhale.com/public_html/app/libraries/DotEnv.php:18
+Stack trace:
+#0 /home/customer/www/shareposts.guywhale.com/public_html/app/config/config.php(6): DevCoder\DotEnv->__construct('.env')
+#1 /home/customer/www/shareposts.guywhale.com/public_html/app/bootstrap.php(8): require_once('/home/customer/...')
+#2 /home/customer/www/shareposts.guywhale.com/public_html/public/index.php(3): require_once('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/shareposts.guywhale.com/public_html/app/libraries/DotEnv.php on line 18
+[01-Nov-2022 19:47:23 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: .env does not exist in /home/customer/www/shareposts.guywhale.com/public_html/app/libraries/DotEnv.php:18
+Stack trace:
+#0 /home/customer/www/shareposts.guywhale.com/public_html/app/config/config.php(6): DevCoder\DotEnv->__construct('.env')
+#1 /home/customer/www/shareposts.guywhale.com/public_html/app/bootstrap.php(8): require_once('/home/customer/...')
+#2 /home/customer/www/shareposts.guywhale.com/public_html/public/index.php(3): require_once('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/shareposts.guywhale.com/public_html/app/libraries/DotEnv.php on line 18

@@ -3,7 +3,7 @@
 use DevCoder\DotEnv;
 
 // Set up DotEnv class so .env file can be read.
-(new DotEnv(__DIR__ . '/../.env'))->load();
+(new DotEnv(__DIR__ . '/../../.env'))->load();
 
 // DB Params
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
