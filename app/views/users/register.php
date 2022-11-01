@@ -2,7 +2,7 @@
 [
     'name' => $name,
     'email' => $email,
-    'password' => $passwword,
+    'password' => $password,
     'confirmPassword' => $confirmPassword,
     'nameErr' => $nameErr,
     'emailErr' => $emailErr,
@@ -46,7 +46,7 @@
                     <input type="password"
                         name="password"
                         class="form-control form-control-lg <?= !empty($passwordErr) ? 'is-invalid' : '' ?>"
-                        value=""
+                        value="<?= !empty($password) ?: $password ?>"
                     >
                     <?php if ($passwordErr) { ?>
                         <span class="invalid-feedback"><?= $passwordErr; ?></span>
@@ -57,7 +57,7 @@
                     <input type="password"
                         name="confirmPassword"
                         class="form-control form-control-lg <?= !empty($confirmPasswordErr) ? 'is-invalid' : '' ?>"
-                        value=""
+                        value="<?= !empty($confirmPassword) ?: $confirmPassword ?>"
                     >
                     <?php if ($confirmPasswordErr) { ?>
                         <span class="invalid-feedback"><?= $confirmPasswordErr; ?></span>

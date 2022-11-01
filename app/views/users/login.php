@@ -1,7 +1,7 @@
 <?php
 [
     'email' => $email,
-    'password' => $passwword,
+    'password' => $password,
     'emailErr' => $emailErr,
     'passwordErr' => $passwordErr,
 ] = $data;
@@ -31,7 +31,7 @@
                     <input type="password"
                         name="password"
                         class="form-control form-control-lg <?= !empty($passwordErr) ? 'is-invalid' : '' ?>"
-                        value=""
+                        value="<?= !empty($password) ?: $password; ?>"
                     >
                     <?php if ($passwordErr) { ?>
                         <span class="invalid-feedback"><?= $passwordErr; ?></span>
